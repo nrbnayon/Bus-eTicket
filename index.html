@@ -80,7 +80,6 @@
                         </div>
                     </div>
                 </div>
-
             </div>
             <div
                 class="flex flex-col md:flex-row gap-8 justify-center font-inter  lg:absolute -bottom-16 left-8 right-8 lg:z-30 ">
@@ -191,7 +190,7 @@
                         <div
                             class="flex items-center space-x-2 bg-[#1DD10026] p-2 rounded-xl font-inter text-lg font-medium text-[#1DD100]">
                             <div><img src="images/seat-green.png"></div>
-                            <p><span>40</span> Seats left</p>
+                            <p><span id="seats-left">40</span> Seats left</p>
                         </div>
                     </div>
                     <div class="bg-[#F7F8F8] space-y-8 rounded-2xl p-5  ">
@@ -260,102 +259,101 @@
                             class="flex justify-start items-center my-2 font-inter text-lg font-medium text-[#03071280]">
                             <p class="w-[6%]">A</p>
                             <div class="flex justify-between items-center w-full">
-                                <button class="btn border-none bg-[#F7F8F8] w-[13%]">A1</button>
-                                <button class="btn border-none bg-[#F7F8F8] w-[13%]">A2</button>
-                                <button class="btn border-none bg-[#F7F8F8] w-[13%]">A3</button>
-                                <button class="btn border-none bg-[#F7F8F8] w-[13%]">A4</button>
+                                <button id="a1" class="btn seat border-none bg-[#F7F8F8] w-[13%]">A1</button>
+                                <button id="a2" class="btn seat border-none bg-[#F7F8F8] w-[13%]">A2</button>
+                                <button id="a3" class="btn seat border-none bg-[#F7F8F8] w-[13%]">A3</button>
+                                <button id="a4" class="btn seat border-none bg-[#F7F8F8] w-[13%]">A4</button>
                             </div>
                         </div>
                         <div
                             class="flex justify-start items-center my-2 font-inter text-lg font-medium text-[#03071280]">
                             <p class="w-[6%]">B</p>
                             <div class="flex justify-between items-center w-full">
-                                <button class="btn border-none bg-[#F7F8F8] w-[13%]">B1</button>
-                                <button class="btn border-none bg-[#F7F8F8] w-[13%]">B2</button>
-                                <button class="btn border-none bg-[#F7F8F8] w-[13%]">B3</button>
-                                <button class="btn border-none bg-[#F7F8F8] w-[13%]">B4</button>
+                                <button id="b1" class="btn seat border-none bg-[#F7F8F8] w-[13%]">B1</button>
+                                <button id="b2" class="btn seat border-none bg-[#F7F8F8] w-[13%]">B2</button>
+                                <button id="b3" class="btn seat border-none bg-[#F7F8F8] w-[13%]">B3</button>
+                                <button id="b4" class="btn seat border-none bg-[#F7F8F8] w-[13%]">B4</button>
                             </div>
                         </div>
                         <div
                             class="flex justify-start items-center my-2 font-inter text-lg font-medium text-[#03071280]">
                             <p class="w-[6%]">C</p>
                             <div class="flex justify-between items-center w-full">
-                                <button class="btn border-none bg-[#F7F8F8] w-[13%]">C1</button>
-                                <button class="btn border-none bg-[#F7F8F8] w-[13%]">C2</button>
-                                <button class="btn border-none bg-[#F7F8F8] w-[13%]">C3</button>
-                                <button class="btn border-none bg-[#F7F8F8] w-[13%]">C4</button>
+                                <button id="c1" class="btn seat border-none bg-[#F7F8F8] w-[13%]">C1</button>
+                                <button id="c2" class="btn seat border-none bg-[#F7F8F8] w-[13%]">C2</button>
+                                <button id="c3" class="btn seat border-none bg-[#F7F8F8] w-[13%]">C3</button>
+                                <button id="c4" class="btn seat border-none bg-[#F7F8F8] w-[13%]">C4</button>
                             </div>
                         </div>
                         <div
                             class="flex justify-start items-center my-2 font-inter text-lg font-medium text-[#03071280]">
                             <p class="w-[6%]">D</p>
                             <div class="flex justify-between items-center w-full">
-                                <button class="btn border-none bg-[#F7F8F8] w-[13%]">D1</button>
-                                <button class="btn border-none bg-[#F7F8F8] w-[13%]">D2</button>
-                                <button class="btn border-none bg-[#F7F8F8] w-[13%]">D3</button>
-                                <button class="btn border-none bg-[#F7F8F8] w-[13%]">D4</button>
+                                <button id="d1" class="btn seat border-none bg-[#F7F8F8] w-[13%]">D1</button>
+                                <button id="d2" class="btn seat border-none bg-[#F7F8F8] w-[13%]">D2</button>
+                                <button id="d3" class="btn seat border-none bg-[#F7F8F8] w-[13%]">D3</button>
+                                <button id="d4" class="btn seat border-none bg-[#F7F8F8] w-[13%]">D4</button>
                             </div>
                         </div>
                         <div
                             class="flex justify-start items-center my-2 font-inter text-lg font-medium text-[#03071280]">
                             <p class="w-[6%]">E</p>
                             <div class="flex justify-between items-center w-full">
-                                <button class="btn border-none bg-[#F7F8F8] w-[13%]">E1</button>
-                                <button class="btn border-none bg-[#F7F8F8] w-[13%]">E2</button>
-                                <button class="btn border-none bg-[#F7F8F8] w-[13%]">E3</button>
-                                <button class="btn border-none bg-[#F7F8F8] w-[13%]">E4</button>
+                                <button id="e1" class="btn seat border-none bg-[#F7F8F8] w-[13%]">E1</button>
+                                <button id="e2" class="btn seat border-none bg-[#F7F8F8] w-[13%]">E2</button>
+                                <button id="e3" class="btn seat border-none bg-[#F7F8F8] w-[13%]">E3</button>
+                                <button id="e4" class="btn seat border-none bg-[#F7F8F8] w-[13%]">E4</button>
                             </div>
                         </div>
                         <div
                             class="flex justify-start items-center my-2 font-inter text-lg font-medium text-[#03071280]">
                             <p class="w-[6%]">F</p>
                             <div class="flex justify-between items-center w-full">
-                                <button class="btn border-none bg-[#F7F8F8] w-[13%]">F1</button>
-                                <button class="btn border-none bg-[#F7F8F8] w-[13%]">F2</button>
-                                <button class="btn border-none bg-[#F7F8F8] w-[13%]">F3</button>
-                                <button class="btn border-none bg-[#F7F8F8] w-[13%]">F4</button>
+                                <button id="f1" class="btn seat border-none bg-[#F7F8F8] w-[13%]">F1</button>
+                                <button id="f2" class="btn seat border-none bg-[#F7F8F8] w-[13%]">F2</button>
+                                <button id="f3" class="btn seat border-none bg-[#F7F8F8] w-[13%]">F3</button>
+                                <button id="f4" class="btn seat border-none bg-[#F7F8F8] w-[13%]">F4</button>
                             </div>
                         </div>
                         <div
                             class="flex justify-start items-center my-2 font-inter text-lg font-medium text-[#03071280]">
                             <p class="w-[6%]">G</p>
                             <div class="flex justify-between items-center w-full">
-                                <button class="btn border-none bg-[#F7F8F8] w-[13%]">G1</button>
-                                <button class="btn border-none bg-[#F7F8F8] w-[13%]">G2</button>
-                                <button class="btn border-none bg-[#F7F8F8] w-[13%]">G3</button>
-                                <button class="btn border-none bg-[#F7F8F8] w-[13%]">G4</button>
+                                <button id="g1" class="btn seat border-none bg-[#F7F8F8] w-[13%]">G1</button>
+                                <button id="g2" class="btn seat border-none bg-[#F7F8F8] w-[13%]">G2</button>
+                                <button id="g3" class="btn seat border-none bg-[#F7F8F8] w-[13%]">G3</button>
+                                <button id="g4" class="btn seat border-none bg-[#F7F8F8] w-[13%]">G4</button>
                             </div>
                         </div>
                         <div
                             class="flex justify-start items-center my-2 font-inter text-lg font-medium text-[#03071280]">
                             <p class="w-[6%]">H</p>
                             <div class="flex justify-between items-center w-full">
-                                <button class="btn border-none bg-[#F7F8F8] w-[13%]">H1</button>
-                                <button class="btn border-none bg-[#F7F8F8] w-[13%]">H2</button>
-                                <button class="btn border-none bg-[#F7F8F8] w-[13%]">H3</button>
-                                <button class="btn border-none bg-[#F7F8F8] w-[13%]">H4</button>
+                                <button id="h1" class="btn seat border-none bg-[#F7F8F8] w-[13%]">H1</button>
+                                <button id="h2" class="btn seat border-none bg-[#F7F8F8] w-[13%]">H2</button>
+                                <button id="h3" class="btn seat border-none bg-[#F7F8F8] w-[13%]">H3</button>
+                                <button id="h4" class="btn seat border-none bg-[#F7F8F8] w-[13%]">H4</button>
                             </div>
                         </div>
                         <div
                             class="flex justify-start items-center my-2 font-inter text-lg font-medium text-[#03071280]">
                             <p class="w-[6%]">I</p>
                             <div class="flex justify-between items-center w-full">
-                                <button class="btn border-none bg-[#F7F8F8] w-[13%]">I1</button>
-                                <button class="btn border-none bg-[#F7F8F8] w-[13%]">I2</button>
-                                <button class="btn border-none bg-[#F7F8F8] w-[13%]">I3</button>
-                                <button class="btn border-none bg-[#F7F8F8] w-[13%]">I4</button>
+                                <button id="i1" class="btn seat border-none bg-[#F7F8F8] w-[13%]">I1</button>
+                                <button id="i2" class="btn seat border-none bg-[#F7F8F8] w-[13%]">I2</button>
+                                <button id="i3" class="btn seat border-none bg-[#F7F8F8] w-[13%]">I3</button>
+                                <button id="i4" class="btn seat border-none bg-[#F7F8F8] w-[13%]">I4</button>
                             </div>
                         </div>
                         <div
                             class="flex justify-start items-center my-2 font-inter text-lg font-medium text-[#03071280]">
                             <p class="w-[6%]">J</p>
                             <div class="flex justify-between items-center w-full">
-                                <button class="btn border-none bg-[#F7F8F8] w-[13%]">J1</button>
-                                <button class="btn border-none bg-[#F7F8F8] w-[13%]">J2</button>
-                                <button class="btn border-none bg-[#F7F8F8] w-[13%]">J3</button>
-                                <button class="btn border-none bg-[#F7F8F8] w-[13%]">J4</button>
+                                <button id="j1" class="btn seat border-none bg-[#F7F8F8] w-[13%]">J1</button>
+                                <button id="j2" class="btn seat border-none bg-[#F7F8F8] w-[13%]">J2</button>
+                                <button id="j3" class="btn seat border-none bg-[#F7F8F8] w-[13%]">J3</button>
+                                <button id="j4" class="btn seat border-none bg-[#F7F8F8] w-[13%]">J4</button>
                             </div>
-
                         </div>
                     </div>
                 </div>
@@ -367,7 +365,8 @@
                     <div
                         class="bg-[#F7F8F8] space-y-4 my-4 rounded-2xl p-5 font-inter text-base font-medium text-[#030712]">
                         <div class="flex justify-between border-dashed border-b-2 border-[#0307124D] pb-2">
-                            <p>Seat <span class="px-2 rounded-xl text-center bg-[#1DD100] text-white font-bold">1
+                            <p>Seat <span id="seat-buy"
+                                    class="px-2 rounded-xl text-center bg-[#1DD100] text-white font-bold">0
                                 </span>
                             </p>
                             <p>Class</p>
@@ -383,12 +382,17 @@
                             <p>Total Price</p>
                             <p>BDT <span>1000</span></p>
                         </div>
-
-                        <div class="flex justify-between items-center rounded-xl bg-white">
+                        <div id="discount-show" class="hidden">
+                            <div class="flex justify-between common-color">
+                                <p class="">Discount Price</p>
+                                <p>BDT <span>100</span></p>
+                            </div>
+                        </div>
+                        <div id="cuppon-apply" class="flex justify-between items-center rounded-xl bg-white">
                             <input type="text"
                                 class="input w-full outline-none border-none focus:outline-none focus:border-none"
                                 placeholder="Have any coupon?" />
-                            <button
+                            <button onclick="couponApply()"
                                 class="btn bg-[#1DD100] text-white font-inter text-base font-semibold">Apply</button>
                         </div>
                         <div class="flex justify-between ">
@@ -405,12 +409,14 @@
                                     <path
                                         d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6ZM12.735 14c.618 0 1.093-.561.872-1.139a6.002 6.002 0 0 0-11.215 0c-.22.578.254 1.139.872 1.139h9.47Z" />
                                 </svg>
-                                <input type="text" class="grow" placeholder="Enter Your Name" required />
+                                <input type="text" class="grow placeholder:text-sm lg:text-base"
+                                    placeholder="Enter Your Name" required />
                             </label>
                             <p class="text-base font-semibold text-[#030712]">Enter Your Phone Number*</p>
                             <label class="input input-bordered flex items-center gap-2">
-                                <img src="images/Call.png" class="w-4 h-4">
-                                <input type="number" class="grow" placeholder="Enter Your Phone Number" required />
+                                <img src="images/Call.png" class="w-4 h-4 hidden lg:flex">
+                                <input type=" number" class="grow placeholder:text-sm lg:text-base"
+                                    placeholder="Enter Your Phone Number" required />
                             </label>
                             <p class="text-base font-semibold text-[#030712]">Enter Your Phone Email</p>
                             <label class="input input-bordered flex items-center gap-2">
@@ -421,9 +427,10 @@
                                     <path
                                         d="M15 6.954 8.978 9.86a2.25 2.25 0 0 1-1.956 0L1 6.954V11.5A1.5 1.5 0 0 0 2.5 13h11a1.5 1.5 0 0 0 1.5-1.5V6.954Z" />
                                 </svg>
-                                <input type="email" class="grow" placeholder="Enter Your Email" />
+                                <input type="email" class="grow placeholder:text-sm lg:text-base"
+                                    placeholder="Enter Your Email" />
                             </label>
-                            <button
+                            <button onclick="my_modal_5.showModal()"
                                 class="btn w-full bg-[#1DD100] font-inter text-base font-extrabold text-white">Next</button>
                             <div class="flex justify-evenly text[#03071299] font-inter text-sm font-normal">
                                 <p class="underline underline-offset-4">Terms and Conditions</p>
@@ -434,6 +441,19 @@
                 </div>
             </div>
         </div>
+        <!-- ----Modal- -->
+        <dialog id="my_modal_5" class="modal modal-bottom sm:modal-middle">
+            <div class="modal-box">
+                <h3 class="font-bold text-lg">Hello!</h3>
+                <p class="py-4">Press ESC key or click the button below to close</p>
+                <div class="modal-action">
+                    <form method="dialog">
+                        <!-- if there is a button in form, it will close the modal -->
+                        <button class="btn">Close</button>
+                    </form>
+                </div>
+            </div>
+        </dialog>
     </section>
     <footer class="bg-neutral ">
         <div class="container mx-auto footer p-10 text-neutral-content">
@@ -493,6 +513,11 @@
             </nav>
         </div>
     </footer>
+
+    <script src="script/utility.js"></script>
+    <script src="script/seatSelect.js"></script>
+    <script src="script/couponapply.js"></script>
+    <script src="script/paymentprocess.js"></script>
 </body>
 
 </html>
