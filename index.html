@@ -33,7 +33,7 @@
                         <li><a class="text-[#030712B3]">Search</a></li>
                     </ul>
                 </div>
-                <a class="text-2xl lg:text-xl color-[#030712] font-extrabold cursor-pointer">P-Ticket</a>
+                <a class="pl-2 text-2xl lg:text-xl color-[#030712] font-extrabold cursor-pointer">P-Ticket</a>
             </div>
             <div class="menu">
                 <ul class="hidden lg:flex text-base font-normal">
@@ -372,32 +372,32 @@
                             <p>Class</p>
                             <p>Price</p>
                         </div>
-                        <div class="flex justify-between text-[#03071299] font-normal">
-                            <p><span>C1</span></p>
+                        <div id="seat-no" class="font-raleway">
+                            <!-- <p><span>C1</span></p>
                             <p>Economic</p>
-                            <p>550</p>
+                            <p>550</p> -->
                         </div>
                         <span class="border-solid border-b-2 block py-1 border-[#03071233]"></span>
                         <div class="flex justify-between ">
                             <p>Total Price</p>
-                            <p>BDT <span>1000</span></p>
+                            <p>BDT <span id="seat-price">0</span></p>
                         </div>
                         <div id="discount-show" class="hidden">
                             <div class="flex justify-between common-color">
                                 <p class="">Discount Price</p>
-                                <p>BDT <span>100</span></p>
+                                <p>BDT <span id="discount-taka">0</span></p>
                             </div>
                         </div>
                         <div id="cuppon-apply" class="flex justify-between items-center rounded-xl bg-white">
-                            <input type="text"
+                            <input type="text" id="coupon-code"
                                 class="input w-full outline-none border-none focus:outline-none focus:border-none"
                                 placeholder="Have any coupon?" />
-                            <button onclick="couponApply()"
+                            <button onclick="couponApply()" disabled id="apply-coupon"
                                 class="btn bg-[#1DD100] text-white font-inter text-base font-semibold">Apply</button>
                         </div>
                         <div class="flex justify-between ">
                             <p>Grand Total</p>
-                            <p>BDT <span>1000</span></p>
+                            <p>BDT <span id="total-price">0</span></p>
                         </div>
                     </div>
                     <div>
