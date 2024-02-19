@@ -1,6 +1,7 @@
 # Palki Paribahan
 
-### Live Link:
+### Live Link: https://nrbnayon.github.io/Bus-eTicket/ ||
+### Demo: https://palki-paribahan.netlify.app/
 
 Developing the Future of Transportation: Where Innovation Meets Mobility
 
