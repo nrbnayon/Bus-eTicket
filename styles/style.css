@@ -2,6 +2,11 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
 
+html,
+body {
+    scroll-behavior: smooth;
+}
+
 .font-raleway {
     font-family: "Raleway", sans-serif;
 }
