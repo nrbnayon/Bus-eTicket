@@ -7,17 +7,9 @@ function showDiscountPrice(elementId) {
   discount.classList.remove("hidden");
 }
 
-// Seats selection
-
-let getCouponId = document
-  .getElementById("coupon-code")
-  .addEventListener("keyup", function (event) {
-    let couponIdByElement = event.target.value;
-    return couponIdByElement;
-    // console.log(couponId);
-  });
-
 const selectedSeats = [];
+let userName = "";
+let userNumber = "";
 function selectSeat(event) {
   const seat = event.target;
   if (selectedSeats.length >= 4 && !seat.classList.contains("bg-[#1DD100]")) {
@@ -66,6 +58,8 @@ function selectSeat(event) {
   }
   seatsLeftElement.innerText = seatsLeft;
   seatBuyElement.innerText = setBuy;
+
+  // Set Pricing
   let discount = 0;
   let ticketPrice = 0;
   if (setBuy === 1) {
@@ -83,6 +77,8 @@ function selectSeat(event) {
   ticketPriceElement.innerText = ticketPrice;
   totalTicketPrice.innerText = ticketPrice;
   totalDiscount.innerText = discount;
+
+  //Coupon apply
   const applyCoupon = document.getElementById("apply-coupon");
   if (setBuy === 4) {
     applyCoupon.removeAttribute("disabled");
@@ -99,5 +95,63 @@ function selectSeat(event) {
       totalTicketPrice.innerText = ticketPrice.toFixed(2);
       totalDiscount.innerText = discount.toFixed(2);
     });
+  } else {
+    applyCoupon.setAttribute("disabled", true);
+  }
+
+  const getName = document
+    .getElementById("user-name")
+    .addEventListener("keyup", function (event) {
+      userName = event.target.value;
+      //   console.log(userName);
+
+      const submitNext = document.getElementById("submit");
+      if (setBuy > 0) {
+        if (
+          typeof userName === "string" &&
+          typeof userNumber === "string" &&
+          userNumber.length > 0
+        ) {
+          submitNext.removeAttribute("disabled");
+        } else {
+          submitNext.setAttribute("disabled", true);
+        }
+      }
+    });
+
+  const getNumber = document
+    .getElementById("user-number")
+    .addEventListener("keyup", function (event) {
+      userNumber = event.target.value;
+      //   console.log(userNumber);
+
+      const submitNext = document.getElementById("submit");
+      if (setBuy > 0) {
+        if (
+          typeof userName === "string" &&
+          typeof userNumber === "string" &&
+          userNumber.length > 0
+        ) {
+          submitNext.removeAttribute("disabled");
+        } else {
+          submitNext.setAttribute("disabled", true);
+        }
+      }
+    });
+
+  const submitNext = document.getElementById("submit");
+  if (setBuy > 0) {
+    if (
+      typeof userName === "string" &&
+      typeof userNumber === "string" &&
+      userNumber.length > 0
+    ) {
+      submitNext.removeAttribute("disabled");
+    } else {
+      submitNext.setAttribute("disabled", true);
+    }
+  } else {
+    // Add this else block
+    submitNext.setAttribute("disabled", true);
   }
 }

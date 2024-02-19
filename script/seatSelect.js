@@ -13,5 +13,4 @@ let seatsLeft = parseInt(seatsLeftElement.innerText);
 const seatBuyElement = document.getElementById("seat-buy");
 let setBuy = parseInt(seatBuyElement.innerText);
 
-// const totalDiscount = document.getElementById("discount-taka");
-// let discountTaka = parseInt(totalDiscount.innerText);
+// Declare userNumber outside of the event listener

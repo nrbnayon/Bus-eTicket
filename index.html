@@ -409,13 +409,13 @@
                                     <path
                                         d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6ZM12.735 14c.618 0 1.093-.561.872-1.139a6.002 6.002 0 0 0-11.215 0c-.22.578.254 1.139.872 1.139h9.47Z" />
                                 </svg>
-                                <input type="text" class="grow placeholder:text-sm lg:text-base"
+                                <input type="text" id="user-name" class="grow placeholder:text-sm lg:text-base"
                                     placeholder="Enter Your Name" required />
                             </label>
                             <p class="text-base font-semibold text-[#030712]">Enter Your Phone Number*</p>
                             <label class="input input-bordered flex items-center gap-2">
                                 <img src="images/Call.png" class="w-4 h-4 hidden lg:flex">
-                                <input type=" number" class="grow placeholder:text-sm lg:text-base"
+                                <input type="number" class="grow placeholder:text-sm lg:text-base" id="user-number"
                                     placeholder="Enter Your Phone Number" required />
                             </label>
                             <p class="text-base font-semibold text-[#030712]">Enter Your Phone Email</p>
@@ -430,7 +430,7 @@
                                 <input type="email" class="grow placeholder:text-sm lg:text-base"
                                     placeholder="Enter Your Email" />
                             </label>
-                            <button onclick="my_modal_5.showModal()"
+                            <button onclick="my_modal_5.showModal()" disabled id="submit"
                                 class="btn w-full bg-[#1DD100] font-inter text-base font-extrabold text-white">Next</button>
                             <div class="flex justify-evenly text[#03071299] font-inter text-sm font-normal">
                                 <p class="underline underline-offset-4">Terms and Conditions</p>
@@ -517,7 +517,6 @@
     <script src="script/utility.js"></script>
     <script src="script/seatSelect.js"></script>
     <script src="script/couponapply.js"></script>
-    <script src="script/paymentprocess.js"></script>
 </body>
 
 </html>
